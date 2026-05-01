@@ -126,7 +126,7 @@ router.put('/:id', async (req, res) => {
   }
 });
 
-// ─── DELETE /api/tasks/:id  (Admin only) ──────────────────────
+// // ─── DELETE /api/tasks/:id  (Admin only) ──────────────────────
 router.delete('/:id', adminOnly, async (req, res) => {
   try {
     const task = await Task.findByIdAndDelete(req.params.id);
@@ -152,5 +152,9 @@ router.get('/stats/dashboard', async (req, res) => {
     res.status(500).json({ success: false, message: 'Server error.' });
   }
 });
+
+
+
+
 
 module.exports = router;
