@@ -196,6 +196,7 @@ function GlassInput({ label, ...props }) {
           fontSize:14, outline:'none', boxSizing:'border-box',
           backdropFilter:'blur(10px)',
           caretColor: '#4a6cf7',
+          //ajay kushwaha
         }}
         {...props}
       />
